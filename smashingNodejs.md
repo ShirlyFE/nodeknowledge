@@ -97,8 +97,8 @@ logger中间件还允许自定义日志输出格式，比如只想记录请求�
 ```
 
 完整的可用的token包括：
-* :req[header] (如：req[Accept])
-* :res[header] (如：res[Content-Length])
+* :req[header]   (如：req[Accept])
+* :res[header]   (如：res[Content-Length])
 * :http-version
 * :response-time
 * :remote-addr
