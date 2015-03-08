@@ -15,9 +15,9 @@ npm镜像： [淘宝镜像](https://registry.npm.taobao.org) [cnpmjs镜像](http
 
 镜像的持久使用：
 ```
-    npm config **set** registry https://registry.npm.taobao.org
+    npm config set registry https://registry.npm.taobao.org
     // 配置后可通过下面方式来验证是否成功
-    npm config **get** registry
+    npm config get registry
 ```
 ## dependencies vs devDependencies
 
