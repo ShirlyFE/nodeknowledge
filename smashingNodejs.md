@@ -16,7 +16,7 @@ connect的实现代码如下([imageSite_connect.js](./smashingNodejs/Connect/ima
 ```
 Connect也自动帮我们处理404的情况，我们可以通过访问错误的地址试试，是不是很干净清爽
 
-Connect的一个核心概念是中间件，所谓中间件其实就是一个简单的js函数，它除了处理req和res对象之外，还接收next函数来做流控制
+Connect的一个核心概念是中间件，所谓中间件其实就是一个简单的js函数，它除了处理req和res对象之外，还接收next函数来做流控制,而且中间件是串行执行的
 
 对于上面的图片展示站点，如果我们要求能够根据每个请求的不同情况处理以下几种任务：
 * 记录请求处理时间
@@ -133,7 +133,10 @@ logger也可以自定义token，比如给请求Content-Type定义一个简写的
 
 bodyParser可以使用formidable模块，让你处理用户上传的文件,参看[bodyParser.js](./smashingNodejs/Connect/bodyParser.js)
 
-### cookie 中间件
+### cookie 中间件 、session中间件
+session中间件需要操作cookie，所以在引用session之前首先要引入cookieParser中间件
+
+
 
 
 
